@@ -1,0 +1,23 @@
+﻿@model Category 
+
+
+@{
+    ViewBag.Title = "AddCategory";
+}
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.TextBoxFor(x => x.CategoryName)
+    </div>
+
+    <div>
+        @Html.TextBoxFor(x=>x.Description)
+    </div>
+    <div>
+        <button class="btn btn-primary">
+            Kategori Ekle
+        </button>
+    </div>
+}
+
